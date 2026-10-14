@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Injuro Web App & Marketing Platform",
+    "role": "Full-Stack Engineer",
+    "period": "Dec 2025 — Oct 2026",
+    "description": "An AI-powered legaltech platform designed to automate personal injury client intake and attorney workflows. Contributed as part of a small engineering team to the development of the public marketing platform and the authenticated web application featuring real-time AI voice intake agents.",
+    "highlights": [
+      "Contributed to the development and architecture of both marketing and authenticated web apps using Next.js (App Router) and TypeScript",
+      "Implemented full-stack authentication and role-based access control with Clerk Auth and Next.js middleware",
+      "Built custom Next.js API routes for server-side authorization checks and secure API key proxying",
+      "Integrated interactive Vapi AI and ElevenLabs voice widgets for real-time legal intake workflows",
+      "Managed asynchronous voice agent state and data fetching using TanStack Query, with Zod for API boundary validation",
+      "Delivered high-converting, accessible marketing landing pages optimized for performance and SEO"
+    ],
+    "tags": ["Next.js", "React", "TypeScript", "Vite", "Tailwind CSS", "Shadcn UI", "Framer Motion", "TanStack Query", "Node.js", "NestJS", "Zod", "i18n", "Clerk Auth", "Vapi AI", "ElevenLabs", "Vercel"],
+    "images": [],
+    "links": ["https://app.injuro.com/", "https://www.injuro.com/"]
+  },
+  {
+    "title": "Quadrant Health Web App & Marketing Platform",
+    "role": "Full-Stack Engineer",
+    "period": "Feb 2023 — Sep 2026",
+    "description": "An enterprise AI healthcare platform designed for patient management, clinical analytics, interactive voice/video automation, and secure healthcare messaging. As the founding frontend engineer, I built the primary web app from scratch and launched the public marketing platform, and collaborated on backend feature delivery. The platform grew from a prototype into a product handling 2M+ patient interactions annually, with 70%+ of calls resolved without staff involvement (company-reported), serving clients in the US and Europe.",
+    "highlights": [
+      "Architected the core web app from scratch, establishing state management, routing, and scalable UI architecture",
+      "Implemented RBAC and feature-gating for role-based route and module access across clinical teams",
+      "Integrated real-time patient messaging, Twilio Telehealth calling, and interactive AI assistant interfaces (Vapi AI, ElevenLabs, HeyGen, Tavus)",
+      "Built dynamic appointment calendars, clinical analytics dashboards, and PDF/e-signature tools",
+      "Built live doctor-patient speech translation with Soniox and multi-language support (i18n plus LLM translation for dynamic content)",
+      "Supported PHP backend API endpoints to accelerate feature delivery and configured Docker for containerized local workflows",
+      "Configured automated quality pipelines with Playwright, Cypress, Jest, Storybook, and Bugsnag"
+    ],
+    "tags": ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Vite", "Zod", "Axios", "i18n", "Vapi AI", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus", "Twilio", "Playwright", "Cypress", "BrowserStack", "Bugsnag", "Docker", "Vercel"],
+    "images": [],
+    "links": ["https://app.quadrant.health/", "https://quadrant.health/"]
+  },
+  {
+    "title": "Treasury Wine Estates Brand Platforms",
+    "role": "Frontend Developer",
+    "period": "Aug 2022 — Jan 2023",
+    "description": "A suite of high-performance web applications and brand landing pages built for major Australian wine brands. Developed in collaboration with digital agency Hide & Seek. The project focused on building a scalable, white-label frontend architecture using reusable UI component libraries, client-side headless CMS integration, smooth GSAP animations, and optimized Core Web Vitals.",
+    "highlights": [
+      "Converted Figma designs into highly responsive web interfaces for multiple wine brand platforms",
+      "Developed and maintained a shared Storybook component library for rapid UI reuse across brand sites, backed by React Testing Library component tests",
+      "Integrated Storyblok headless CMS on the client side to enable non-technical teams to manage dynamic content and page layouts seamlessly",
+      "Crafted smooth, scroll-driven GSAP animations and interactive hero transitions",
+      "Optimized frontend performance, asset loading, and cross-browser compatibility"
+    ],
+    "tags": ["React", "TypeScript", "Redux Toolkit", "GSAP", "Storybook", "React Testing Library", "Storyblok CMS", "Vercel"],
+    "images": [],
+    "links": ["https://www.tweglobal.com/brands", "https://hideandseek.digital/work/twe"]
+  },
+  {
+    "title": "Map-Based Real Estate Marketplace",
+    "role": "Full-Stack Developer",
+    "period": "Mar 2021 — Jul 2022",
+    "description": "A map-based real estate marketplace connecting renters with landlords and homebuyers with sellers, with interactive map views and multi-criteria apartment search across mobile and desktop.",
+    "highlights": [
+      "Built a responsive React web application with reusable layout templates, optimized for mobile and desktop in portrait and landscape orientations",
+      "Built interactive map views with property markers using the Google Maps API",
+      "Developed multi-criteria apartment search with combinable filters for price, location, property type, and amenities",
+      "Implemented light and dark themes",
+      "Created a shared component library used across company products",
+      "Wrote JUnit tests for the Java backend, refactored legacy code, and fixed bugs"
+    ],
+    "tags": ["React", "TypeScript", "Redux", "Material-UI", "Java", "Spring Framework", "MySQL", "MongoDB", "Google Maps API", "Firebase", "OAuth", "Bootstrap", "JUnit"],
+    "images": []
+  }
+]

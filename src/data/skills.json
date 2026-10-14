@@ -1,0 +1,13 @@
+[
+  { "category": "Languages", "items": ["TypeScript", "JavaScript"] },
+  { "category": "Frontend", "items": ["React", "Next.js", "Redux Toolkit", "TanStack Query", "Zod", "i18n", "Vite", "Webpack"] },
+  { "category": "UI & Styling", "items": ["Tailwind CSS", "Shadcn UI", "Material-UI", "Sass", "Storybook", "Framer Motion", "GSAP", "Lottie", "hello-pangea/dnd"] },
+  { "category": "Data Visualization", "items": ["Highcharts", "ApexCharts", "Recharts", "Chart.js", "WaveSurfer.js"] },
+  { "category": "Backend", "items": ["Node.js", "NestJS", "Express", "Prisma", "REST APIs"] },
+  { "category": "Databases", "items": ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Firebase"] },
+  { "category": "AI & LLM", "items": ["Anthropic Claude", "OpenAI API", "Gemini", "Vapi AI", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"] },
+  { "category": "Testing", "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack"] },
+  { "category": "Infrastructure", "items": ["Vercel", "Docker", "CI/CD", "Bugsnag"] },
+  { "category": "Integrations", "items": ["Twilio", "Clerk", "OAuth", "Google Maps API", "Storyblok CMS"] },
+  { "category": "Tools & Platforms", "items": ["Git", "GitHub", "GitLab", "Bitbucket", "Jira", "Linear", "Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"] }
+]

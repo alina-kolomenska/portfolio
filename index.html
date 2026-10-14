@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- crossorigin is required on the gstatic hint: font files are fetched with CORS. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme')
+          var dark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          if (dark) document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+
+    <title>Alina Kolomenska — Full-Stack Engineer</title>
+    <meta
+      name="description"
+      content="Full-stack engineer with a strong frontend focus and 5+ years building high-performance React and Next.js products and the backend infrastructure behind them."
+    />
+
+    <!-- Replace every absolute URL below if the domain changes; scrapers ignore relative og:image. -->
+    <link rel="canonical" href="https://alina-kolomenska.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alina Kolomenska" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://alina-kolomenska.vercel.app/" />
+    <meta property="og:title" content="Alina Kolomenska — Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack engineer with a strong frontend focus and 5+ years building high-performance React and Next.js products and the backend infrastructure behind them."
+    />
+    <meta property="og:image" content="https://alina-kolomenska.vercel.app/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alina Kolomenska — Full-Stack Engineer. React, Next.js, Node.js, NestJS." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alina Kolomenska — Full-Stack Engineer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack engineer with a strong frontend focus and 5+ years building high-performance React and Next.js products and the backend infrastructure behind them."
+    />
+    <meta name="twitter:image" content="https://alina-kolomenska.vercel.app/og.png" />
+    <meta name="twitter:image:alt" content="Alina Kolomenska — Full-Stack Engineer. React, Next.js, Node.js, NestJS." />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f7ff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0c15" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alina Kolomenska",
+        "jobTitle": "Full-Stack Engineer",
+        "url": "https://alina-kolomenska.vercel.app/",
+        "image": "https://alina-kolomenska.vercel.app/og.png",
+        "address": { "@type": "PostalAddress", "addressCountry": "UA" },
+        "knowsAbout": ["React", "Next.js", "Node.js", "NestJS", "TypeScript"],
+        "sameAs": [
+          "https://github.com/alina-kolomenska",
+          "https://www.linkedin.com/in/alina-kolomenska/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
