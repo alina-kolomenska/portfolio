@@ -48,10 +48,21 @@ export interface ExperienceEntry {
   highlights?: string[]
 }
 
+export interface EducationDocument {
+  title: string
+  src: string
+  thumbnail: string
+  alt: string
+  /** Pixel size of `src`, so the dialog reserves the right space before the image loads. */
+  width: number
+  height: number
+}
+
 export interface EducationEntry {
   degree: string
   institution: string
   period: string
+  document?: EducationDocument
 }
 
 export interface SkillGroup {
