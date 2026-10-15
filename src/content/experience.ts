@@ -4,7 +4,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: 'Full Stack Engineer',
     company: 'Incode Group',
-    period: 'Dec 2025 — Present · Full-time',
+    period: 'Dec 2025 — Present',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
       'Own features end-to-end, from React/Next.js interfaces to the Node.js services, databases and deployment behind them.',
@@ -19,7 +19,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: 'Frontend Developer',
     company: 'Incode Group',
-    period: 'Jul 2022 — Dec 2025 · Full-time',
+    period: 'Jul 2022 — Dec 2025',
     location: 'Kharkiv, Ukraine (Remote)',
     description: 'Built production web applications for healthcare, legaltech, e-commerce, and enterprise brand clients.',
     highlights: [
@@ -33,7 +33,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: 'Full Stack Developer',
     company: 'Inetex LTD',
-    period: 'Mar 2021 — Jul 2022 · Full-time',
+    period: 'Mar 2021 — Jul 2022',
     location: 'Rehovot, Center District, Israel (Hybrid)',
     description:
       'Contributed to a map-based real estate marketplace connecting renters with landlords and homebuyers with sellers.',

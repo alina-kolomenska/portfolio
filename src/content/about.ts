@@ -24,6 +24,6 @@ export const about: About = {
     },
   ],
   closing: [
-    'With professional working English, I collaborate closely with distributed teams across the US and EU. I do my best work in cultures built on trust, direct communication, and developer autonomy. Open to frontend and full-stack roles. Fully remote.',
+    'With professional working English, I collaborate closely with international teams. I do my best work in cultures built on trust, direct communication, and developer autonomy. Open to frontend and full-stack roles. Fully remote.',
   ],
 }
