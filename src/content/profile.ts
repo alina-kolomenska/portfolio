@@ -4,7 +4,7 @@ export const profile: Profile = {
   name: 'Alina Kolomenska',
   initials: 'AK',
   role: 'Full-Stack Engineer',
-  tagline: 'Full-stack engineer with a strong frontend focus and 5+ years building high-performance React and Next.js products and the backend infrastructure behind them.',
+  tagline: 'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites in healthcare, legaltech, and e-commerce.',
   location: 'Ukraine',
   availability: 'Available for work',
   email: 'alina.kolomenska@gmail.com',
@@ -16,6 +16,6 @@ export const profile: Profile = {
     { label: 'Years of experience', value: '5+' },
     { label: 'Availability', value: 'Remote' },
     { label: 'Products', value: 'SaaS' },
-    { label: 'English', value: 'B2' },
+    { label: 'Upper-Intermediate English', value: 'B2' },
   ],
 }

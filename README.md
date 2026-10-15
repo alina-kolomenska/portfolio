@@ -19,6 +19,7 @@ Personal portfolio of a full-stack engineer with a strong frontend focus.
 - Light and dark themes that follow the system preference, remember the visitor's choice, and apply before first paint
 - Responsive sidebar navigation that highlights the section in view
 - Collapsible project cards and job highlights
+- Certificate and diploma previews that open full size in a dialog
 - Accessible by default: skip link, landmarks, screen-reader labels, and smooth scrolling only when reduced motion isn't requested
 - Open Graph, Twitter card, and JSON-LD metadata for link previews and search
 
@@ -35,7 +36,7 @@ All copy lives in data files, so updating the site never means touching componen
 | `src/data/projects.json` | Projects |
 | `src/data/skills.json` | Skill groups |
 
-The shapes are defined in `src/types/content.ts`. `profile.ts` also accepts two optional fields: `resumeUrl` adds a "Download CV" button to the sidebar, and `introVideo` adds a video intro to the About section.
+The shapes are defined in `src/types/content.ts`. `profile.ts` also accepts two optional fields: `resumeUrl` adds a "Download CV" button to the sidebar, and `introVideo` adds a video intro to the About section. Education entries can attach a `document` (title, full image, thumbnail, alt text, and pixel size), with the images in `public/education/`.
 
 Page metadata and the share image live in `index.html` and `public/og.png`. Update both if the name, role, or domain changes.
 
