@@ -48,8 +48,8 @@ export function ProjectCard({ project }: { project: Project }) {
 
             {project.highlights && project.highlights.length > 0 && (
               <ul className="list-disc space-y-1.5 pl-4 text-sm text-muted-foreground marker:text-primary">
-                {project.highlights.map((point, index) => (
-                  <li key={index}>{point}</li>
+                {project.highlights.map((point) => (
+                  <li key={point}>{point}</li>
                 ))}
               </ul>
             )}

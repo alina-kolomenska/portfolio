@@ -1,12 +1,41 @@
 [
   { "category": "Programming Languages", "items": ["TypeScript", "JavaScript"] },
-  { "category": "Frontend", "items": ["React", "Next.js", "Redux Toolkit", "TanStack Query", "Zod", "i18n", "Recharts", "Vite", "Webpack"] },
-  { "category": "UI & Styling", "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "Sass", "Storybook", "Framer Motion", "GSAP", "Lottie"] },
+  {
+    "category": "Frontend",
+    "items": [
+      "React",
+      "Next.js",
+      "Redux Toolkit",
+      "TanStack Query",
+      "React Hook Form",
+      "Zod",
+      "i18n",
+      "Recharts",
+      "Vite",
+      "Webpack"
+    ]
+  },
+  {
+    "category": "UI & Styling",
+    "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "Sass", "Storybook", "Framer Motion", "GSAP", "Lottie"]
+  },
   { "category": "Backend", "items": ["Node.js", "NestJS", "Express", "REST APIs", "JWT"] },
-  { "category": "Databases & ORM", "items": ["PostgreSQL", "Prisma", "MySQL", "MongoDB", "Neon", "Firebase"] },
-  { "category": "Integrations", "items": ["Twilio", "Clerk", "OAuth", "Google Maps API", "Storyblok"] },
-  { "category": "AI & LLM", "items": ["Claude API", "OpenAI API", "Gemini API", "Vapi", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"] },
+  {
+    "category": "Databases & ORM",
+    "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"]
+  },
+  {
+    "category": "Integrations",
+    "items": ["Twilio", "Clerk", "OAuth", "Google Maps API", "Storyblok", "Postmark", "Slack API"]
+  },
+  {
+    "category": "AI & LLM",
+    "items": ["Claude API", "OpenAI API", "Gemini API", "Vapi", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"]
+  },
   { "category": "AI Dev Tools", "items": ["Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"] },
   { "category": "Testing", "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack"] },
-  { "category": "Infrastructure & Monitoring", "items": ["Vercel", "Render", "Cloudflare", "Docker", "CI/CD", "Bugsnag"] }
+  {
+    "category": "Infrastructure & Monitoring",
+    "items": ["Vercel", "Render", "Cloudflare", "Docker", "CI/CD", "Bugsnag"]
+  }
 ]

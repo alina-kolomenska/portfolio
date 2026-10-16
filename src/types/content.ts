@@ -37,6 +37,7 @@ export interface Profile {
   email: string
   github: string
   linkedin: string
+  sourceUrl?: string
   photo?: string
   introVideo?: IntroVideo
   resumeUrl?: string

@@ -15,7 +15,7 @@ export function TimelineEntry({ title, subtitle, period, location, description, 
   const isCurrent = /present/i.test(period)
 
   return (
-    <div className="relative border-l border-border py-0.5 pb-7 pl-6 last:pb-0">
+    <div className="relative border-l border-border pt-0.5 pl-6 not-last:pb-7">
       <span
         className={`absolute top-1.5 -left-[4.5px] size-2 rounded-full ${isCurrent ? 'bg-primary' : 'bg-muted-foreground/40'}`}
       />
@@ -30,14 +30,14 @@ export function TimelineEntry({ title, subtitle, period, location, description, 
         <Collapsible>
           <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
             <ul className="list-disc space-y-1.5 pt-2 pl-4 text-sm text-muted-foreground marker:text-primary">
-              {highlights.map((point, index) => (
-                <li key={index}>{point}</li>
+              {highlights.map((point) => (
+                <li key={point}>{point}</li>
               ))}
             </ul>
           </CollapsibleContent>
           <CollapsibleTrigger className="group/more mt-2 inline-flex cursor-pointer items-center gap-1 font-mono text-xs text-primary hover:underline">
             <span className="group-data-[state=open]/more:hidden">Show more</span>
-            <span className="hidden group-data-[state=open]/more:inline">Show less</span>
+            <span className="group-data-[state=closed]/more:hidden">Show less</span>
             {/* Tells screen readers which role this button expands. */}
             <span className="sr-only">
               {' '}

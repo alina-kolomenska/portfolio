@@ -12,10 +12,10 @@ export const about: About = {
     },
     {
       label: 'Backend',
-      text: 'Reliable Node.js and NestJS REST APIs, PostgreSQL and MongoDB, with Clerk and JWT authentication and role-based access.',
+      text: 'Reliable Node.js and NestJS REST APIs, SQL and NoSQL databases, and secure authentication with role-based access control.',
     },
     {
-      label: 'Applied AI Integration',
+      label: 'AI Integration',
       text: 'Practical experience shipping voice and avatar agents to production, along with real-time speech and LLM-based content translation.',
     },
     {

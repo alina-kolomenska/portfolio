@@ -55,8 +55,21 @@ export function Contact() {
         </div>
       )}
 
-      <div className="border-t border-border pt-6 font-mono text-xs text-muted-foreground">
-        © {new Date().getFullYear()} {profile.name} — built with React, Tailwind CSS & shadcn/ui.
+      <div className="flex flex-wrap gap-x-6 gap-y-1 border-t border-border pt-6 font-mono text-xs text-muted-foreground">
+        <span>
+          © {new Date().getFullYear()} {profile.name}
+        </span>
+        <span>Built with React, TypeScript, Vite, Tailwind CSS & shadcn/ui</span>
+        {profile.sourceUrl && (
+          <a
+            href={profile.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-4 transition-colors hover:text-primary"
+          >
+            Source on GitHub
+          </a>
+        )}
       </div>
     </Section>
   )

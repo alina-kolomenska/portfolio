@@ -69,11 +69,7 @@ export function AppSidebar({ navItems }: AppSidebarProps) {
             <SidebarMenu className="gap-1.5">
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.id}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={activeId === item.id}
-                    className="gap-1.5 font-mono"
-                  >
+                  <SidebarMenuButton asChild isActive={activeId === item.id} className="gap-1.5 font-mono">
                     <a href={`#${item.id}`}>
                       {/* Decorative: without this it is announced as "slash slash about". */}
                       <span aria-hidden="true">//</span>

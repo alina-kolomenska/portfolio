@@ -27,16 +27,16 @@ Personal portfolio of a full-stack engineer with a strong frontend focus.
 
 All copy lives in data files, so updating the site never means touching components:
 
-| File | Content |
-| --- | --- |
-| `src/content/profile.ts` | Name, role, contact links, stats, languages |
-| `src/content/about.ts` | About section |
-| `src/content/experience.ts` | Job positions |
-| `src/content/education.ts` | Education |
-| `src/data/projects.json` | Projects |
-| `src/data/skills.json` | Skill groups |
+| File                        | Content                                     |
+| --------------------------- | ------------------------------------------- |
+| `src/content/profile.ts`    | Name, role, contact links, stats, languages |
+| `src/content/about.ts`      | About section                               |
+| `src/content/experience.ts` | Job positions                               |
+| `src/content/education.ts`  | Education                                   |
+| `src/data/projects.json`    | Projects                                    |
+| `src/data/skills.json`      | Skill groups                                |
 
-The shapes are defined in `src/types/content.ts`. `profile.ts` also accepts two optional fields: `resumeUrl` adds a "Download CV" button to the sidebar, and `introVideo` adds a video intro to the About section. Education entries can attach a `document` (title, full image, thumbnail, alt text, and pixel size), with the images in `public/education/`.
+The shapes are defined in `src/types/content.ts`. `profile.ts` also accepts three optional fields: `resumeUrl` adds a "Download CV" button to the sidebar, `introVideo` adds a video intro to the About section, and `sourceUrl` adds a "Source on GitHub" link to the footer. Education entries can attach a `document` (title, full image, thumbnail, alt text, and pixel size), with the images in `public/education/`.
 
 Page metadata and the share image live in `index.html` and `public/og.png`. Update both if the name, role, or domain changes.
 
@@ -46,8 +46,10 @@ Requires Node.js 20.19+ or 22.12+.
 
 ```bash
 npm install
-npm run dev       # start the dev server
-npm run build     # type-check and build for production
-npm run lint      # run ESLint
-npm run preview   # preview the production build locally
+npm run dev            # start the dev server
+npm run build          # type-check and build for production
+npm run lint           # run ESLint
+npm run format         # format with Prettier (also sorts Tailwind classes)
+npm run format:check   # check formatting without writing
+npm run preview        # preview the production build locally
 ```

@@ -9,7 +9,8 @@ export const experience: ExperienceEntry[] = [
     description:
       'Own features end-to-end, from React/Next.js interfaces to the Node.js services, databases, and deployment behind them.',
     highlights: [
-      'Design and ship backend services in Node.js, Express, and NestJS, using PostgreSQL with Prisma and MongoDB, and exposing REST APIs for React/Next.js clients.',
+      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React/Next.js clients.',
+      'Model data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
       'Build production frontends with React, Next.js, and TypeScript, styled with Tailwind CSS and shadcn/ui.',
       'Implement authentication with Clerk and JWT, plus role-based access control, and build real-time telehealth features with Twilio.',
       'Integrate AI voice and avatar technologies (ElevenLabs, Vapi, HeyGen, Tavus) into production assistant and automation features.',
@@ -21,7 +22,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Incode Group',
     period: 'Jul 2022 – Dec 2025',
     location: 'Kharkiv, Ukraine (Remote)',
-    description: 'Built production web applications for healthcare, legaltech, e-commerce, and enterprise brand clients.',
+    description: 'Built production web applications for healthcare, e-commerce, and enterprise brand clients.',
     highlights: [
       'Developed dashboards, admin panels, marketing sites, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
       'Built animated interfaces and micro-interactions with Framer Motion, GSAP, and Lottie, keeping performance smooth across devices.',
@@ -38,7 +39,7 @@ export const experience: ExperienceEntry[] = [
     description:
       'Worked on a real estate marketplace for rentals and home sales, focusing on the React frontend and test coverage.',
     highlights: [
-      'Developed React and TypeScript frontend features and worked alongside the Java backend.',
+      'Developed React and TypeScript frontend features and worked alongside the Java backend and MongoDB database.',
       'Built responsive map and search interfaces with the Google Maps API for desktop and mobile.',
       'Created a shared component library used across company products.',
       'Wrote React Testing Library and JUnit tests, refactored legacy code, and fixed bugs.',
