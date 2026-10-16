@@ -29,7 +29,7 @@ All copy lives in data files, so updating the site never means touching componen
 
 | File | Content |
 | --- | --- |
-| `src/content/profile.ts` | Name, role, contact links, stats |
+| `src/content/profile.ts` | Name, role, contact links, stats, languages |
 | `src/content/about.ts` | About section |
 | `src/content/experience.ts` | Job positions |
 | `src/content/education.ts` | Education |

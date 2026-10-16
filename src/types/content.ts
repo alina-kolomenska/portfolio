@@ -3,6 +3,11 @@ export interface Stat {
   value: string
 }
 
+export interface Language {
+  name: string
+  level: string
+}
+
 export interface IntroVideo {
   src: string
   poster?: string
@@ -37,6 +42,7 @@ export interface Profile {
   resumeUrl?: string
   primaryStack?: string[]
   stats?: Stat[]
+  languages?: Language[]
 }
 
 export interface ExperienceEntry {
@@ -78,7 +84,6 @@ export interface ProjectImage {
 
 export interface Project {
   title: string
-  role: string
   period?: string
   confidential?: boolean
   description: string

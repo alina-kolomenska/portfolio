@@ -15,7 +15,12 @@ export const profile: Profile = {
   stats: [
     { label: 'Years of experience', value: '5+' },
     { label: 'Availability', value: 'Remote' },
-    { label: 'Products', value: 'SaaS' },
-    { label: 'Upper-Intermediate English', value: 'B2' },
+    { label: 'Products', value: 'SaaS & AI' },
+    { label: 'Upper-intermediate English', value: 'B2' },
+  ],
+  languages: [
+    { name: 'Ukrainian', level: 'Native' },
+    { name: 'English', level: 'Professional working' },
+    { name: 'Hebrew', level: 'Limited working' },
   ],
 }

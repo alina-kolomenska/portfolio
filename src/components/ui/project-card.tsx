@@ -13,16 +13,13 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="flex flex-col gap-3 p-5">
           <CollapsibleTrigger className="group/trigger flex w-full cursor-pointer flex-col gap-3 text-left">
             <div className="flex flex-wrap items-center gap-2">
-              <Badge variant="secondary">{project.role}</Badge>
               {project.confidential && (
                 <Badge variant="outline" className="gap-1">
                   <Lock /> NDA
                 </Badge>
               )}
-              <div className="ml-auto flex items-center gap-2">
-                {project.period && <span className="font-mono text-xs text-muted-foreground">{project.period}</span>}
-                <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]/trigger:rotate-180" />
-              </div>
+              {project.period && <span className="font-mono text-xs text-muted-foreground">{project.period}</span>}
+              <ChevronDown className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]/trigger:rotate-180" />
             </div>
             <h3 className="font-heading text-lg font-medium">{project.title}</h3>
           </CollapsibleTrigger>

@@ -14,9 +14,9 @@ const contactLinks = [
 export function Contact() {
   return (
     <Section id="contact">
-      <SectionHeading eyebrow="Contact" title="Let's talk" />
+      <SectionHeading eyebrow="Contact" title="Let’s talk" />
       <p className="text-muted-foreground">
-        I'm available for remote frontend and full-stack work — feel free to reach out about a role, a project, or just
+        I’m available for remote frontend and full-stack work — feel free to reach out about a role, a project, or just
         to talk shop.
       </p>
 
@@ -40,6 +40,20 @@ export function Contact() {
           </a>
         ))}
       </div>
+
+      {profile.languages && profile.languages.length > 0 && (
+        <div>
+          <h3 className="font-mono text-xs text-muted-foreground">Languages</h3>
+          <ul className="mt-3 flex flex-wrap gap-x-8 gap-y-3">
+            {profile.languages.map((language) => (
+              <li key={language.name} className="text-sm">
+                <span className="font-medium">{language.name}</span>
+                <span className="text-muted-foreground"> · {language.level}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="border-t border-border pt-6 font-mono text-xs text-muted-foreground">
         © {new Date().getFullYear()} {profile.name} — built with React, Tailwind CSS & shadcn/ui.

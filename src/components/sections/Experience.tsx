@@ -6,7 +6,7 @@ import { TimelineEntry } from '@/components/ui/timeline-entry'
 export function Experience() {
   return (
     <Section id="experience">
-      <SectionHeading eyebrow="Experience" title="Where I've worked" />
+      <SectionHeading eyebrow="Experience" title="Where I’ve worked" />
       <div>
         {experience.map((entry) => (
           <TimelineEntry

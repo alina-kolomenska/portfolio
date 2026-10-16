@@ -2,7 +2,7 @@ import type { About } from '@/types/content'
 
 export const about: About = {
   intro: [
-    'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites in healthcare, legaltech, and e-commerce with React, Next.js, and TypeScript, backed by Node.js and NestJS. I’ve delivered complex systems, from real-time messaging and multi-tenant SaaS platforms to AI-driven user flows.',
+    'Full-stack engineer with a strong frontend focus and 5+ years building production SaaS products and brand websites in healthcare, legaltech, and e-commerce with React, Next.js, and TypeScript, backed by Node.js and NestJS. I’ve delivered complex systems, from real-time messaging and multi-tenant platforms to AI-driven user flows.',
   ],
   highlightsTitle: 'What I bring to the table:',
   highlights: [
@@ -16,14 +16,14 @@ export const about: About = {
     },
     {
       label: 'Applied AI Integration',
-      text: 'Practical experience wiring voice and avatar agents, real-time speech translation, and LLM-based content translation, shipped to production.',
+      text: 'Practical experience shipping voice and avatar agents to production, along with real-time speech and LLM-based content translation.',
     },
     {
       label: 'Product Ownership',
-      text: 'I work from schema and API design through testing to the final UI, and I keep code review and testing in the process under deadline pressure.',
+      text: 'I work from schema and API design through to the final UI, and keep code review and testing in place under deadline pressure.',
     },
   ],
   closing: [
-    'With professional working English, I collaborate closely with international teams. I do my best work in cultures built on trust, direct communication, and developer autonomy. Open to frontend and full-stack roles. Fully remote.',
+    'With professional working English, I collaborate closely with international, distributed teams. I do my best work in cultures built on trust, direct communication, and developer autonomy. Open to frontend and full-stack roles. Fully remote.',
   ],
 }

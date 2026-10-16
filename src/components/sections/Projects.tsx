@@ -6,7 +6,7 @@ import { SectionHeading } from '@/components/ui/section-heading'
 export function Projects() {
   return (
     <Section id="projects">
-      <SectionHeading eyebrow="Projects" title="Things I've built" />
+      <SectionHeading eyebrow="Projects" title="Things I’ve built" />
       <div className="space-y-4">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />

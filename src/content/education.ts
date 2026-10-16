@@ -4,7 +4,7 @@ export const education: EducationEntry[] = [
   {
     degree: 'Full Stack Development',
     institution: 'Tel-Ran Educational Center',
-    period: 'Sep 2020 — Sep 2021',
+    period: 'Sep 2020 – Sep 2021',
     document: {
       title: 'Certificate of Graduation',
       src: '/education/tel-ran-certificate.webp',
@@ -17,7 +17,7 @@ export const education: EducationEntry[] = [
   {
     degree: 'Junior Specialist, Administration of Computer Systems and Networks',
     institution: 'Kyiv Electromechanical College',
-    period: 'Sep 2014 — Jun 2017',
+    period: 'Sep 2014 – Jun 2017',
     document: {
       title: 'Junior Specialist’s Diploma with honours',
       src: '/education/kyiv-electromechanical-diploma.webp',
