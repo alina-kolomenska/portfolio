@@ -12,6 +12,7 @@ export const profile: Profile = {
   github: 'https://github.com/alina-kolomenska',
   linkedin: 'https://www.linkedin.com/in/alina-kolomenska/',
   sourceUrl: 'https://github.com/alina-kolomenska/portfolio',
+  resumeUrl: '/Alina_Kolomenska_CV.pdf',
   photo: '/photo.webp',
   primaryStack: ['React', 'Next.js', 'Node.js', 'NestJS'],
   stats: [

@@ -48,7 +48,11 @@ export function ProjectCard({ project }: { project: Project }) {
 
         <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
           <div className="space-y-4 border-t border-border px-5 pt-4 pb-5">
-            <p className="text-sm text-muted-foreground">{project.description}</p>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              {project.description.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
 
             {project.highlights && project.highlights.length > 0 && (
               <ul className="list-disc space-y-1.5 pl-4 text-sm text-muted-foreground marker:text-primary">

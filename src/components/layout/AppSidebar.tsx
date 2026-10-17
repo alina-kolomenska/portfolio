@@ -107,7 +107,7 @@ export function AppSidebar({ navItems }: AppSidebarProps) {
 
         {profile.resumeUrl && (
           <Button variant="outline" className="w-full" asChild>
-            <a href={profile.resumeUrl} target="_blank" rel="noreferrer">
+            <a href={profile.resumeUrl} download>
               <Download /> Download CV
             </a>
           </Button>

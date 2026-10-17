@@ -4,6 +4,7 @@ export const education: EducationEntry[] = [
   {
     degree: 'Full Stack Development',
     institution: 'Tel-Ran Educational Center',
+    location: 'Rehovot, Israel',
     period: 'Sep 2020 – Sep 2021',
     document: {
       title: 'Certificate of Graduation',
@@ -15,8 +16,9 @@ export const education: EducationEntry[] = [
     },
   },
   {
-    degree: 'Junior Specialist, Administration of Computer Systems and Networks',
+    degree: 'Administration of Computer Systems and Networks',
     institution: 'Kyiv Electromechanical College',
+    location: 'Kyiv, Ukraine',
     period: 'Sep 2014 – Jun 2017',
     document: {
       title: 'Junior Specialist’s Diploma with honours',

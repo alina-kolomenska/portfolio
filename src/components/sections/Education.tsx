@@ -14,7 +14,10 @@ export function Education() {
             className="rounded-xl border border-border p-5 transition-colors hover:border-primary/40 hover:bg-primary/5"
           >
             <p className="font-medium">{entry.degree}</p>
-            <p className="mt-1 text-sm text-muted-foreground">{entry.institution}</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {entry.institution}
+              {entry.location && ` · ${entry.location}`}
+            </p>
             {entry.period && <p className="mt-3 font-mono text-xs text-muted-foreground">{entry.period}</p>}
             {entry.document && <DocumentPreview document={entry.document} issuer={entry.institution} />}
           </div>

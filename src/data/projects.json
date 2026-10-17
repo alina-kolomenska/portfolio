@@ -3,7 +3,10 @@
     "title": "Quadrant Health Web App & Marketing Website",
     "company": "Incode Group",
     "period": "Feb 2023 – Sep 2026",
-    "description": "An enterprise AI healthcare platform for patient management, clinical analytics, interactive voice/video automation, and secure healthcare messaging. As the founding frontend engineer, I built the primary web app from scratch, launched the public marketing website, and collaborated on backend feature delivery. The platform grew from a prototype into a product handling 2M+ patient interactions annually, with 70%+ of calls resolved without staff involvement (company-reported), serving clients in the US and Europe.",
+    "description": [
+      "An enterprise AI healthcare platform for patient management, clinical analytics, interactive voice/video automation, and secure healthcare messaging. As the founding frontend engineer, I built the primary web app from scratch, launched the public marketing website, and collaborated on backend feature delivery.",
+      "The platform grew from a prototype into a product handling 2M+ patient interactions annually, with 70%+ of calls resolved without staff involvement (company-reported), serving clients in the US and Europe."
+    ],
     "highlights": [
       "Architected the core React web app with Webpack, setting up state management, routing, and a scalable UI structure.",
       "Implemented RBAC and feature gating for route and module access across clinical teams.",
@@ -11,9 +14,9 @@
       "Developed appointment calendars, clinical analytics dashboards, and PDF/e-signature tools.",
       "Built live doctor-patient speech translation with Soniox, and multi-language support with i18n and LLM translation for dynamic content.",
       "Supported PHP backend API endpoints and Flyway migrations for the MySQL database, and used Docker for local development.",
-      "Optimized Core Web Vitals for both the web app and the Vite marketing website, and handled the website’s SEO, analytics tracking, and Termly cookie consent.",
-      "Connected the marketing website’s demo request and subscription forms to Postmark emails and Slack notifications for the team.",
-      "Configured automated quality pipelines with Playwright, Cypress, Jest, Storybook, and Bugsnag."
+      "Optimized Core Web Vitals for the web app and the Vite marketing website, and handled the website’s SEO, analytics tracking, and Termly cookie consent.",
+      "Connected the website’s demo request and subscription forms to Postmark emails and Slack notifications for the team.",
+      "Set up automated quality pipelines with Playwright, Cypress, Jest, Storybook, and Bugsnag."
     ],
     "tags": [
       "React",
@@ -23,6 +26,7 @@
       "Tailwind CSS",
       "Material UI",
       "shadcn/ui",
+      "Storybook",
       "Framer Motion",
       "Recharts",
       "Vite",
@@ -52,7 +56,9 @@
     "title": "Injuro Web App & Marketing Website",
     "company": "Incode Group",
     "period": "Dec 2025 – Oct 2026",
-    "description": "An AI-powered legaltech platform that automates personal injury client intake and attorney workflows. I was part of a small engineering team building the public marketing website and the authenticated web app for clients, admins, and providers, with real-time AI voice intake agents.",
+    "description": [
+      "An AI-powered legaltech platform that automates personal injury client intake and attorney workflows. I was part of a small engineering team building the public marketing website and the authenticated web app for clients, admins, and providers, with real-time AI voice intake agents."
+    ],
     "highlights": [
       "Contributed to the development and architecture of the authenticated web app and the marketing website, both built with Next.js (App Router) and TypeScript.",
       "Implemented authentication and role-based access control with Clerk and Next.js middleware.",
@@ -90,7 +96,9 @@
     "title": "Treasury Wine Estates Brand Websites",
     "company": "Incode Group",
     "period": "Aug 2022 – Jan 2023",
-    "description": "A suite of high-performance websites and landing pages for major Australian wine brands, built in collaboration with the digital agency Hide & Seek. The project focused on a scalable, white-label frontend with reusable UI components, client-side headless CMS integration, and GSAP animations.",
+    "description": [
+      "A suite of high-performance websites and landing pages for major Australian wine brands, built in collaboration with the digital agency Hide & Seek. The project focused on a scalable, white-label frontend with reusable UI components, client-side headless CMS integration, and GSAP animations."
+    ],
     "highlights": [
       "Converted Figma designs into responsive interfaces for multiple wine brands.",
       "Developed and maintained a shared Storybook component library for rapid UI reuse across brand sites, backed by React Testing Library component tests.",
@@ -98,7 +106,7 @@
       "Built scroll-driven GSAP animations and interactive hero transitions.",
       "Optimized frontend performance, asset loading, and cross-browser compatibility."
     ],
-    "tags": ["React", "TypeScript", "Redux", "GSAP", "Storybook", "React Testing Library", "Storyblok"],
+    "tags": ["React", "TypeScript", "Redux", "GSAP", "Storybook", "React Testing Library", "Storyblok", "Figma"],
     "images": [],
     "links": ["https://www.tweglobal.com/brands", "https://hideandseek.digital/work/twe"]
   },
@@ -106,7 +114,9 @@
     "title": "Map-Based Real Estate Marketplace",
     "company": "Inetex LTD",
     "period": "Mar 2021 – Jul 2022",
-    "description": "A marketplace that connects renters with landlords and homebuyers with sellers, built around interactive map views and multi-criteria apartment search on mobile and desktop.",
+    "description": [
+      "A marketplace that connects renters with landlords and homebuyers with sellers, built around interactive map views and multi-criteria apartment search on mobile and desktop."
+    ],
     "highlights": [
       "Built a responsive React web application with reusable layout templates and dark mode, optimized for mobile and desktop in portrait and landscape orientations.",
       "Created interactive map views with property markers using the Google Maps API.",

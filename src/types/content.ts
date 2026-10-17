@@ -68,6 +68,7 @@ export interface EducationDocument {
 export interface EducationEntry {
   degree: string
   institution: string
+  location?: string
   period: string
   document?: EducationDocument
 }
@@ -88,7 +89,7 @@ export interface Project {
   company?: string
   period?: string
   confidential?: boolean
-  description: string
+  description: string[]
   highlights?: string[]
   tags: string[]
   images?: ProjectImage[]
