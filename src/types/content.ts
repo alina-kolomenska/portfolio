@@ -85,6 +85,7 @@ export interface ProjectImage {
 
 export interface Project {
   title: string
+  company?: string
   period?: string
   confidential?: boolean
   description: string

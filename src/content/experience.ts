@@ -7,13 +7,13 @@ export const experience: ExperienceEntry[] = [
     period: 'Dec 2025 – Present',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
-      'Own features end-to-end, from React/Next.js interfaces to the Node.js services, databases, and deployment behind them.',
+      'Own features end to end on client products, from React and Next.js interfaces to NestJS services, databases, and deployment.',
     highlights: [
-      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React/Next.js clients.',
+      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React and Next.js clients.',
       'Model data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
       'Build production frontends with React, Next.js, and TypeScript, styled with Tailwind CSS and shadcn/ui.',
-      'Implement authentication with Clerk and JWT, plus role-based access control, and build real-time telehealth features with Twilio.',
-      'Integrate AI voice and avatar technologies (ElevenLabs, Vapi, HeyGen, Tavus) into production assistant and automation features.',
+      'Implement authentication and role-based access control with Clerk and JWT.',
+      'Integrate AI voice and avatar agents (Vapi, ElevenLabs, HeyGen, Tavus) into production assistant and automation features, alongside Twilio telehealth calling.',
       'Run parallel Claude Code sessions in separate git worktrees to develop several features at once, reviewing and testing every change before merge.',
       'Deploy and maintain apps through CI/CD pipelines, using Docker for local backend environments.',
     ],
@@ -23,9 +23,10 @@ export const experience: ExperienceEntry[] = [
     company: 'Incode Group',
     period: 'Jul 2022 – Dec 2025',
     location: 'Kharkiv, Ukraine (Remote)',
-    description: 'Built production web applications for healthcare, e-commerce, and enterprise brand clients.',
+    description:
+      'Built production web applications and brand websites for healthcare, e-commerce, and enterprise clients.',
     highlights: [
-      'Developed dashboards, admin panels, marketing sites, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
+      'Developed dashboards, admin panels, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
       'Built animated interfaces and micro-interactions with Framer Motion, GSAP, and Lottie, keeping performance smooth across devices.',
       'Created and maintained shared Storybook component libraries used across projects.',
       'Integrated headless CMS and e-commerce platforms, added analytics tracking, and optimized Core Web Vitals on brand and marketing websites.',

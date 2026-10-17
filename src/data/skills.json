@@ -19,15 +19,9 @@
     "category": "UI & Styling",
     "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "Sass", "Storybook", "Framer Motion", "GSAP", "Lottie"]
   },
-  { "category": "Backend", "items": ["Node.js", "NestJS", "Express", "REST APIs", "JWT"] },
-  {
-    "category": "Databases & ORM",
-    "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"]
-  },
-  {
-    "category": "Integrations",
-    "items": ["Twilio", "Clerk", "OAuth", "Google Maps API", "Storyblok", "Postmark", "Slack API"]
-  },
+  { "category": "Backend & Auth", "items": ["Node.js", "NestJS", "Express", "REST APIs", "JWT", "OAuth", "Clerk"] },
+  { "category": "Data", "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"] },
+  { "category": "Integrations", "items": ["Twilio", "Google Maps API", "Storyblok", "Postmark", "Slack API"] },
   {
     "category": "AI & LLM",
     "items": ["Claude API", "OpenAI API", "Gemini API", "Vapi", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"]

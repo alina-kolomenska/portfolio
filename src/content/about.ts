@@ -2,7 +2,7 @@ import type { About } from '@/types/content'
 
 export const about: About = {
   intro: [
-    'Full-stack engineer with a strong frontend focus and 5+ years building production SaaS products and brand websites in healthcare, legaltech, and e-commerce with React, Next.js, and TypeScript, backed by Node.js and NestJS. I’ve delivered complex systems, from real-time messaging and multi-tenant platforms to AI-driven user flows.',
+    'Full-stack engineer with a strong frontend focus and 5+ years building production SaaS products and brand websites for healthcare, legaltech, and e-commerce clients. I work mainly with React, Next.js, and TypeScript, backed by Node.js and NestJS. I’ve delivered complex systems, from real-time messaging and multi-tenant platforms to AI-driven user flows.',
   ],
   highlightsTitle: 'What I bring to the table:',
   highlights: [

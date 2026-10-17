@@ -5,7 +5,7 @@ export const profile: Profile = {
   initials: 'AK',
   role: 'Full-Stack Engineer',
   tagline:
-    'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites in healthcare, legaltech, and e-commerce.',
+    'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites for healthcare, legaltech, and e-commerce clients.',
   location: 'Ukraine',
   availability: 'Available for work',
   email: 'alina.kolomenska@gmail.com',

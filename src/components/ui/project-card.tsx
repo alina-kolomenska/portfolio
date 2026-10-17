@@ -18,7 +18,11 @@ export function ProjectCard({ project }: { project: Project }) {
                   <Lock /> NDA
                 </Badge>
               )}
-              {project.period && <span className="font-mono text-xs text-muted-foreground">{project.period}</span>}
+              {(project.company || project.period) && (
+                <span className="font-mono text-xs text-muted-foreground">
+                  {[project.company, project.period].filter(Boolean).join(' · ')}
+                </span>
+              )}
               <ChevronDown className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]/trigger:rotate-180" />
             </div>
             <h3 className="font-heading text-lg font-medium">{project.title}</h3>
