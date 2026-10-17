@@ -20,10 +20,10 @@ export const about: About = {
     },
     {
       label: 'Product Ownership',
-      text: 'I work from schema and API design through to the final UI, and keep code review and testing in place under deadline pressure.',
+      text: 'I take features from schema and API design to the final UI, with code review and testing as part of development.',
     },
   ],
   closing: [
-    'With professional working English, I collaborate closely with international, distributed teams. I do my best work in cultures built on trust, direct communication, and developer autonomy. Open to frontend and full-stack roles. Fully remote.',
+    'With professional working English, I collaborate closely with international, distributed teams. I do my best work in cultures built on trust, direct communication, and developer autonomy.',
   ],
 }

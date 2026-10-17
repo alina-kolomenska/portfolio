@@ -17,7 +17,18 @@
   },
   {
     "category": "UI & Styling",
-    "items": ["Tailwind CSS", "shadcn/ui", "Material UI", "Sass", "Storybook", "Framer Motion", "GSAP", "Lottie"]
+    "items": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Material UI",
+      "Sass",
+      "Storybook",
+      "Framer Motion",
+      "GSAP",
+      "Lottie"
+    ]
   },
   { "category": "Backend & Auth", "items": ["Node.js", "NestJS", "Express", "REST APIs", "JWT", "OAuth", "Clerk"] },
   { "category": "Data", "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"] },

@@ -90,7 +90,7 @@
     "title": "Treasury Wine Estates Brand Websites",
     "company": "Incode Group",
     "period": "Aug 2022 – Jan 2023",
-    "description": "A suite of high-performance websites and landing pages for major Australian wine brands, built in collaboration with the digital agency Hide & Seek. The project focused on a scalable, white-label frontend with reusable UI components, client-side headless CMS integration, GSAP animations, and optimized Core Web Vitals.",
+    "description": "A suite of high-performance websites and landing pages for major Australian wine brands, built in collaboration with the digital agency Hide & Seek. The project focused on a scalable, white-label frontend with reusable UI components, client-side headless CMS integration, and GSAP animations.",
     "highlights": [
       "Converted Figma designs into responsive interfaces for multiple wine brands.",
       "Developed and maintained a shared Storybook component library for rapid UI reuse across brand sites, backed by React Testing Library component tests.",
@@ -108,11 +108,10 @@
     "period": "Mar 2021 – Jul 2022",
     "description": "A marketplace that connects renters with landlords and homebuyers with sellers, built around interactive map views and multi-criteria apartment search on mobile and desktop.",
     "highlights": [
-      "Built a responsive React web application with reusable layout templates, optimized for mobile and desktop in portrait and landscape orientations.",
+      "Built a responsive React web application with reusable layout templates and dark mode, optimized for mobile and desktop in portrait and landscape orientations.",
       "Created interactive map views with property markers using the Google Maps API.",
       "Developed multi-criteria apartment search with combinable filters for price, location, property type, and amenities.",
-      "Added OAuth-based user authentication.",
-      "Implemented light and dark themes.",
+      "Built REST endpoints in the Java Spring backend, worked on the MongoDB data model, and added OAuth-based user authentication.",
       "Covered the frontend with React Testing Library tests and the Java backend with JUnit tests, which supported safe refactoring and bug fixes."
     ],
     "tags": [

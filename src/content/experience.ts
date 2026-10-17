@@ -7,9 +7,9 @@ export const experience: ExperienceEntry[] = [
     period: 'Dec 2025 – Present',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
-      'Own features end to end on client products, from React and Next.js interfaces to NestJS services, databases, and deployment.',
+      'Own features end to end within client product teams, from React and Next.js interfaces to NestJS services, databases, and deployment.',
     highlights: [
-      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React and Next.js clients.',
+      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React and Next.js apps.',
       'Model data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
       'Build production frontends with React, Next.js, and TypeScript, styled with Tailwind CSS and shadcn/ui.',
       'Implement authentication and role-based access control with Clerk and JWT.',
@@ -24,13 +24,13 @@ export const experience: ExperienceEntry[] = [
     period: 'Jul 2022 – Dec 2025',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
-      'Built production web applications and brand websites for healthcare, e-commerce, and enterprise clients.',
+      'Built production web applications and brand websites for healthcare, e-commerce, and enterprise clients, working within their product teams.',
     highlights: [
       'Developed dashboards, admin panels, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
       'Built animated interfaces and micro-interactions with Framer Motion, GSAP, and Lottie, keeping performance smooth across devices.',
       'Created and maintained shared Storybook component libraries used across projects.',
       'Integrated headless CMS and e-commerce platforms, added analytics tracking, and optimized Core Web Vitals on brand and marketing websites.',
-      'Worked with designers and backend engineers to deliver features from design handoff to release.',
+      'Collaborated with designers and backend engineers to deliver features from design handoff to release.',
     ],
   },
   {
@@ -39,9 +39,9 @@ export const experience: ExperienceEntry[] = [
     period: 'Mar 2021 – Jul 2022',
     location: 'Rehovot, Israel (Hybrid)',
     description:
-      'Worked on a real estate marketplace for rentals and home sales, focusing on the React frontend and test coverage.',
+      'Worked on a client’s real estate marketplace for rentals and home sales, focusing on the React frontend and test coverage.',
     highlights: [
-      'Developed React and TypeScript frontend features and worked alongside the Java backend and MongoDB database.',
+      'Developed React and TypeScript frontend features, and built REST endpoints in the Java Spring backend with MongoDB.',
       'Built responsive map and search interfaces with the Google Maps API for desktop and mobile.',
       'Created a shared component library used across company products.',
       'Wrote React Testing Library and JUnit tests, refactored legacy code, and fixed bugs.',
