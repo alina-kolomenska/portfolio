@@ -14,6 +14,7 @@ export const experience: ExperienceEntry[] = [
       'Build production frontends with React, Next.js, and TypeScript, styled with Tailwind CSS and shadcn/ui.',
       'Implement authentication with Clerk and JWT, plus role-based access control, and build real-time telehealth features with Twilio.',
       'Integrate AI voice and avatar technologies (ElevenLabs, Vapi, HeyGen, Tavus) into production assistant and automation features.',
+      'Run parallel Claude Code sessions in separate git worktrees to develop several features at once, reviewing and testing every change before merge.',
       'Deploy and maintain apps through CI/CD pipelines, using Docker for local backend environments.',
     ],
   },
