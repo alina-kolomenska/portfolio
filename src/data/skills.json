@@ -41,6 +41,6 @@
   { "category": "Testing", "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack"] },
   {
     "category": "Infrastructure & Monitoring",
-    "items": ["Vercel", "Render", "Cloudflare", "Docker", "CI/CD", "Bugsnag"]
+    "items": ["Vercel", "Netlify", "Render", "Cloudflare", "Docker", "CI/CD", "Bugsnag"]
   }
 ]

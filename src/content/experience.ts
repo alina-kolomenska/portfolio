@@ -24,12 +24,12 @@ export const experience: ExperienceEntry[] = [
     period: 'Jul 2022 – Dec 2025',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
-      'Built production web applications and brand websites for healthcare, e-commerce, and enterprise clients, working within their product teams.',
+      'Built production web applications and brand websites for healthcare, consumer goods, and enterprise clients, working within their product teams.',
     highlights: [
       'Developed dashboards, admin panels, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
       'Built animated interfaces and micro-interactions with Framer Motion, GSAP, and Lottie, keeping performance smooth across devices.',
       'Created and maintained shared Storybook component libraries used across projects.',
-      'Integrated headless CMS and e-commerce platforms, added analytics tracking, and optimized Core Web Vitals on brand and marketing websites.',
+      'Integrated headless CMS platforms, added analytics tracking, and optimized Core Web Vitals on brand and marketing websites.',
       'Collaborated with designers and backend engineers to deliver features from design handoff to release.',
     ],
   },

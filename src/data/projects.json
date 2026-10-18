@@ -106,7 +106,17 @@
       "Built scroll-driven GSAP animations and interactive hero transitions.",
       "Optimized frontend performance, asset loading, and cross-browser compatibility."
     ],
-    "tags": ["React", "TypeScript", "Redux", "GSAP", "Storybook", "React Testing Library", "Storyblok", "Figma"],
+    "tags": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "GSAP",
+      "Storybook",
+      "React Testing Library",
+      "Storyblok",
+      "Figma",
+      "Netlify"
+    ],
     "images": [],
     "links": ["https://www.tweglobal.com/brands", "https://hideandseek.digital/work/twe"]
   },
