@@ -1,5 +1,7 @@
 # Alina Kolomenska — Portfolio
 
+[![CI](https://github.com/alina-kolomenska/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/alina-kolomenska/portfolio/actions/workflows/ci.yml)
+
 Personal portfolio of a full-stack engineer with a strong frontend focus.
 
 **Live:** [alina-kolomenska.vercel.app](https://alina-kolomenska.vercel.app/)
@@ -12,7 +14,8 @@ Personal portfolio of a full-stack engineer with a strong frontend focus.
 - Vite
 - Tailwind CSS v4
 - shadcn/ui on Radix primitives, with Lucide icons
-- Deployed on Vercel
+- Vitest and React Testing Library
+- GitHub Actions CI and Vercel deployment
 
 ## Features
 
@@ -23,7 +26,8 @@ Personal portfolio of a full-stack engineer with a strong frontend focus.
 - Downloadable PDF CV from the sidebar
 - Cookieless PostHog analytics, loaded after the page and proxied through the site's own domain
 - Accessible by default: skip link, landmarks, screen-reader labels, and smooth scrolling only when reduced motion isn't requested
-- Open Graph, Twitter card, and JSON-LD metadata for link previews and search
+- Open Graph and Twitter card metadata for link previews
+- Prerendered HTML, JSON-LD structured data, a sitemap, and `llms.txt`, so search engines and AI crawlers can read the full content without running JavaScript
 
 ## Editing content
 
@@ -42,20 +46,24 @@ The shapes are defined in `src/types/content.ts`. `profile.ts` also accepts thre
 
 Project descriptions are lists of paragraphs, and each project can name the `company` it was built at. Education entries can add a `location` and attach a `document` (title, full image, thumbnail, alt text, and pixel size), with the images in `public/education/`.
 
-Page metadata and the share image live in `index.html` and `public/og.png`. Update both if the name, role, or domain changes.
+Page metadata and the share image live in `index.html` and `public/og.png`. The JSON-LD structured data, `llms.txt`, `robots.txt`, and `sitemap.xml` are generated from the content files at build time (`src/lib/seo.ts`). If the domain changes, update `siteUrl` in `profile.ts` and the absolute URLs in `index.html`.
 
 ## Development
 
-Requires Node.js 20.19+ or 22.12+.
+Requires Node.js 24.
 
 Analytics only runs in production builds when `VITE_POSTHOG_KEY` is set. Copy `.env.example` to `.env.local` for local builds, and set the variable in Vercel for the Production environment only, so preview deployments don't send events. Requests go through the `/kr7` rewrite in `vercel.json`, so ad blockers don't drop them.
 
 ```bash
 npm install
 npm run dev            # start the dev server
-npm run build          # type-check and build for production
+npm run build          # type-check, build, and prerender the page for production
 npm run lint           # run ESLint
 npm run format         # format with Prettier (also sorts Tailwind classes)
 npm run format:check   # check formatting without writing
+npm test               # run the test suite once
+npm run test:watch     # run tests on every change
 npm run preview        # preview the production build locally
 ```
+
+CI runs lint, the format check, the tests, and the build on every push to `main` and on pull requests.

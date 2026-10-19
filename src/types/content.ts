@@ -29,10 +29,12 @@ export interface About {
 
 export interface Profile {
   name: string
+  siteUrl: string
   initials: string
   role: string
   tagline: string
   location: string
+  countryCode?: string
   availability: string
   email: string
   github: string

@@ -1,6 +1,7 @@
 import { ArrowUpRight, Mail } from 'lucide-react'
 import { profile } from '@/content/profile'
 import { GithubIcon, LinkedinIcon } from '@/components/ui/brand-icons'
+import { useHydrated } from '@/hooks/use-hydrated'
 import { analyticsEnabled, track } from '@/lib/analytics'
 import { cleanUrl } from '@/lib/utils'
 import { Section } from '@/components/ui/section'
@@ -19,6 +20,8 @@ const contactLinks = [
 ]
 
 export function Contact() {
+  const year = useHydrated() ? new Date().getFullYear() : __BUILD_YEAR__
+
   return (
     <Section id="contact">
       <SectionHeading eyebrow="Contact" title="Let’s talk" />
@@ -66,7 +69,7 @@ export function Contact() {
       <footer className="space-y-2 border-t border-border pt-6 font-mono text-xs text-muted-foreground">
         <div className="flex flex-wrap gap-x-6 gap-y-1">
           <span>
-            © {new Date().getFullYear()} {profile.name}
+            © {year} {profile.name}
           </span>
           <span>Built with React, TypeScript, Vite, Tailwind CSS & shadcn/ui</span>
           {profile.sourceUrl && (

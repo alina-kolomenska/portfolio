@@ -10,7 +10,10 @@ export function About() {
         <span className="mb-3 block font-mono text-xs tracking-widest text-primary">
           <span aria-hidden="true">// </span>about
         </span>
-        <h1 className="font-heading text-3xl font-semibold md:text-4xl">{profile.role}</h1>
+        <h1 className="font-heading text-3xl font-semibold md:text-4xl">
+          <span className="sr-only">{profile.name}, </span>
+          {profile.role}
+        </h1>
         {profile.primaryStack && profile.primaryStack.length > 0 && (
           <p className="mt-4 font-mono text-sm text-primary">{profile.primaryStack.join(' · ')}</p>
         )}

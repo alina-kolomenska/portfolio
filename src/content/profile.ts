@@ -2,11 +2,13 @@ import type { Profile } from '@/types/content'
 
 export const profile: Profile = {
   name: 'Alina Kolomenska',
+  siteUrl: 'https://alina-kolomenska.vercel.app/',
   initials: 'AK',
   role: 'Full-Stack Engineer',
   tagline:
     'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites for healthcare, legaltech, and consumer goods clients.',
   location: 'Ukraine',
+  countryCode: 'UA',
   availability: 'Available for work',
   email: 'alina.kolomenska@gmail.com',
   github: 'https://github.com/alina-kolomenska',

@@ -23,6 +23,7 @@ function readStoredTheme(): Theme | null {
 }
 
 function getInitialTheme(): Theme {
+  if (typeof window === 'undefined') return 'light'
   return readStoredTheme() ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
 }
 

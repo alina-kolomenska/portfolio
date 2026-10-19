@@ -1,16 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
-import { ThemeProvider } from './context/ThemeContext.tsx'
+import { Root } from './Root.tsx'
 import { initAnalytics } from './lib/analytics.ts'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </StrictMode>,
-)
+const container = document.getElementById('root')!
+
+// Production builds ship prerendered HTML to hydrate; the dev server starts from an empty root.
+if (container.hasChildNodes()) hydrateRoot(container, <Root />)
+else createRoot(container).render(<Root />)
 
 initAnalytics()

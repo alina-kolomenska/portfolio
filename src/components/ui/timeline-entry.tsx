@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
+import { isCurrentPeriod } from '@/lib/utils'
 
 interface TimelineEntryProps {
   title: string
@@ -12,7 +13,7 @@ interface TimelineEntryProps {
 }
 
 export function TimelineEntry({ title, subtitle, period, location, description, highlights }: TimelineEntryProps) {
-  const isCurrent = /present/i.test(period)
+  const isCurrent = isCurrentPeriod(period)
 
   return (
     <div className="relative border-l border-border pt-0.5 pl-6 not-last:pb-7">
@@ -28,12 +29,16 @@ export function TimelineEntry({ title, subtitle, period, location, description, 
       {description && <p className="text-sm text-muted-foreground">{description}</p>}
       {highlights && highlights.length > 0 && (
         <Collapsible>
-          <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
-            <ul className="list-disc space-y-1.5 pt-2 pl-4 text-sm text-muted-foreground marker:text-primary">
-              {highlights.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
+          <CollapsibleContent forceMount className="group/content">
+            <div className="grid transition-[grid-template-rows,visibility] duration-200 ease-out group-data-[state=closed]/content:invisible group-data-[state=closed]/content:grid-rows-[0fr] group-data-[state=open]/content:grid-rows-[1fr] motion-reduce:transition-none">
+              <div className="min-h-0 overflow-hidden">
+                <ul className="list-disc space-y-1.5 pt-2 pl-4 text-sm text-muted-foreground marker:text-primary">
+                  {highlights.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </CollapsibleContent>
           <CollapsibleTrigger className="group/more mt-2 inline-flex cursor-pointer items-center gap-1 font-mono text-xs text-primary hover:underline">
             <span className="group-data-[state=open]/more:hidden">Show more</span>
