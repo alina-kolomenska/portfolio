@@ -27,6 +27,7 @@ function loadPostHog(projectKey: string) {
         persistence: 'memory',
         person_profiles: 'identified_only',
         disable_session_recording: true,
+        disable_surveys: true,
         respect_dnt: true,
       })
       client = posthog
