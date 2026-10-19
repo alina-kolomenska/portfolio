@@ -2,6 +2,7 @@ import { Download, Mail, MapPin } from 'lucide-react'
 import { profile } from '@/content/profile'
 import { GithubIcon, LinkedinIcon } from '@/components/ui/brand-icons'
 import { useActiveSection } from '@/hooks/useActiveSection'
+import { track } from '@/lib/analytics'
 import { Button } from '@/components/ui/button'
 import {
   Sidebar,
@@ -87,17 +88,33 @@ export function AppSidebar({ navItems }: AppSidebarProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1">
             <Button variant="ghost" size="icon-sm" asChild>
-              <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                onClick={() => track('contact_link_clicked', { channel: 'github', location: 'sidebar' })}
+              >
                 <GithubIcon />
               </a>
             </Button>
             <Button variant="ghost" size="icon-sm" asChild>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                onClick={() => track('contact_link_clicked', { channel: 'linkedin', location: 'sidebar' })}
+              >
                 <LinkedinIcon />
               </a>
             </Button>
             <Button variant="ghost" size="icon-sm" asChild>
-              <a href={`mailto:${profile.email}`} aria-label="Email">
+              <a
+                href={`mailto:${profile.email}`}
+                aria-label="Email"
+                onClick={() => track('contact_link_clicked', { channel: 'email', location: 'sidebar' })}
+              >
                 <Mail />
               </a>
             </Button>
@@ -107,7 +124,7 @@ export function AppSidebar({ navItems }: AppSidebarProps) {
 
         {profile.resumeUrl && (
           <Button variant="outline" className="w-full" asChild>
-            <a href={profile.resumeUrl} download>
+            <a href={profile.resumeUrl} download onClick={() => track('cv_downloaded')}>
               <Download /> Download CV
             </a>
           </Button>

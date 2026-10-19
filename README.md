@@ -21,6 +21,7 @@ Personal portfolio of a full-stack engineer with a strong frontend focus.
 - Collapsible project cards and job highlights
 - Certificate and diploma previews that open full size in a dialog
 - Downloadable PDF CV from the sidebar
+- Cookieless PostHog analytics, loaded after the page and proxied through the site's own domain
 - Accessible by default: skip link, landmarks, screen-reader labels, and smooth scrolling only when reduced motion isn't requested
 - Open Graph, Twitter card, and JSON-LD metadata for link previews and search
 
@@ -46,6 +47,8 @@ Page metadata and the share image live in `index.html` and `public/og.png`. Upda
 ## Development
 
 Requires Node.js 20.19+ or 22.12+.
+
+Analytics only runs in production builds when `VITE_POSTHOG_KEY` is set. Copy `.env.example` to `.env.local` for local builds, and set the variable in Vercel for the Production environment only, so preview deployments don't send events. Requests go through the `/kr7` rewrite in `vercel.json`, so ad blockers don't drop them.
 
 ```bash
 npm install

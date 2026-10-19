@@ -14,7 +14,7 @@
       "Developed appointment calendars, clinical analytics dashboards, and PDF/e-signature tools.",
       "Built live doctor-patient speech translation with Soniox, and multi-language support with i18n and LLM translation for dynamic content.",
       "Supported PHP backend API endpoints and Flyway migrations for the MySQL database, and used Docker for local development.",
-      "Optimized Core Web Vitals for the web app and the Vite marketing website, and handled the website’s SEO, analytics tracking, and Termly cookie consent.",
+      "Optimized Core Web Vitals for the web app and the Vite marketing website, and handled the website’s SEO and analytics with Google Search Console, Google Analytics, and Termly cookie consent.",
       "Connected the website’s demo request and subscription forms to Postmark emails and Slack notifications for the team.",
       "Set up automated quality pipelines with Playwright, Cypress, Jest, Storybook, and Bugsnag."
     ],
@@ -43,6 +43,8 @@
       "Twilio",
       "Postmark",
       "Slack API",
+      "Google Analytics",
+      "Google Search Console",
       "Jest",
       "Playwright",
       "Cypress",
@@ -87,6 +89,7 @@
       "Clerk",
       "Vapi",
       "ElevenLabs",
+      "PostHog",
       "Vercel"
     ],
     "images": [],

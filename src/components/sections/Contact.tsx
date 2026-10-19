@@ -1,14 +1,21 @@
 import { ArrowUpRight, Mail } from 'lucide-react'
 import { profile } from '@/content/profile'
 import { GithubIcon, LinkedinIcon } from '@/components/ui/brand-icons'
+import { analyticsEnabled, track } from '@/lib/analytics'
 import { cleanUrl } from '@/lib/utils'
 import { Section } from '@/components/ui/section'
 import { SectionHeading } from '@/components/ui/section-heading'
 
 const contactLinks = [
-  { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: 'GitHub', value: cleanUrl(profile.github), href: profile.github, icon: GithubIcon },
-  { label: 'LinkedIn', value: cleanUrl(profile.linkedin), href: profile.linkedin, icon: LinkedinIcon },
+  { label: 'Email', channel: 'email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
+  { label: 'GitHub', channel: 'github', value: cleanUrl(profile.github), href: profile.github, icon: GithubIcon },
+  {
+    label: 'LinkedIn',
+    channel: 'linkedin',
+    value: cleanUrl(profile.linkedin),
+    href: profile.linkedin,
+    icon: LinkedinIcon,
+  },
 ]
 
 export function Contact() {
@@ -27,6 +34,7 @@ export function Contact() {
             href={link.href}
             target={link.href.startsWith('http') ? '_blank' : undefined}
             rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+            onClick={() => track('contact_link_clicked', { channel: link.channel, location: 'contact' })}
             className="group flex min-w-0 items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-primary/40 hover:bg-primary/5 sm:gap-4 sm:p-5"
           >
             <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary sm:size-11">
@@ -55,22 +63,25 @@ export function Contact() {
         </div>
       )}
 
-      <div className="flex flex-wrap gap-x-6 gap-y-1 border-t border-border pt-6 font-mono text-xs text-muted-foreground">
-        <span>
-          © {new Date().getFullYear()} {profile.name}
-        </span>
-        <span>Built with React, TypeScript, Vite, Tailwind CSS & shadcn/ui</span>
-        {profile.sourceUrl && (
-          <a
-            href={profile.sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4 transition-colors hover:text-primary"
-          >
-            Source on GitHub
-          </a>
-        )}
-      </div>
+      <footer className="space-y-2 border-t border-border pt-6 font-mono text-xs text-muted-foreground">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span>
+            © {new Date().getFullYear()} {profile.name}
+          </span>
+          <span>Built with React, TypeScript, Vite, Tailwind CSS & shadcn/ui</span>
+          {profile.sourceUrl && (
+            <a
+              href={profile.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 transition-colors hover:text-primary"
+            >
+              Source on GitHub
+            </a>
+          )}
+        </div>
+        {analyticsEnabled && <p>This site uses PostHog analytics without cookies to count visits and clicks.</p>}
+      </footer>
     </Section>
   )
 }

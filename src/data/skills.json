@@ -1,5 +1,5 @@
 [
-  { "category": "Programming Languages", "items": ["TypeScript", "JavaScript"] },
+  { "category": "Programming Languages", "items": ["TypeScript", "JavaScript", "Java"] },
   {
     "category": "Frontend",
     "items": [
@@ -24,13 +24,17 @@
       "shadcn/ui",
       "Material UI",
       "Sass",
+      "Figma",
       "Storybook",
       "Framer Motion",
       "GSAP",
       "Lottie"
     ]
   },
-  { "category": "Backend & Auth", "items": ["Node.js", "NestJS", "Express", "REST APIs", "JWT", "OAuth", "Clerk"] },
+  {
+    "category": "Backend & Auth",
+    "items": ["Node.js", "NestJS", "Express", "Spring Framework", "REST APIs", "JWT", "OAuth", "Clerk"]
+  },
   { "category": "Data", "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"] },
   { "category": "Integrations", "items": ["Twilio", "Google Maps API", "Storyblok", "Postmark", "Slack API"] },
   {
@@ -38,9 +42,23 @@
     "items": ["Claude API", "OpenAI API", "Gemini API", "Vapi", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"]
   },
   { "category": "AI Dev Tools", "items": ["Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"] },
-  { "category": "Testing", "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack"] },
+  {
+    "category": "Testing",
+    "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack", "JUnit"]
+  },
   {
     "category": "Infrastructure & Monitoring",
-    "items": ["Vercel", "Netlify", "Render", "Cloudflare", "Docker", "CI/CD", "Bugsnag"]
+    "items": [
+      "Vercel",
+      "Netlify",
+      "Render",
+      "Cloudflare",
+      "Docker",
+      "CI/CD",
+      "Bugsnag",
+      "PostHog",
+      "Google Analytics",
+      "Google Search Console"
+    ]
   }
 ]

@@ -2,12 +2,13 @@ import { ChevronDown, ExternalLink, Lock } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card } from '@/components/ui/card'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
+import { track } from '@/lib/analytics'
 import { cleanUrl } from '@/lib/utils'
 import type { Project } from '@/types/content'
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Collapsible asChild>
+    <Collapsible asChild onOpenChange={(open) => open && track('project_expanded', { project: project.title })}>
       <Card className="gap-0 py-0 transition-colors hover:border-primary/40 hover:bg-primary/5">
         {/* Links sit outside the trigger: an anchor inside its <button> is invalid markup. */}
         <div className="flex flex-col gap-3 p-5">

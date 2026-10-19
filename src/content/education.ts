@@ -2,7 +2,7 @@ import type { EducationEntry } from '@/types/content'
 
 export const education: EducationEntry[] = [
   {
-    degree: 'Full Stack Development',
+    degree: 'Full Stack Java Development',
     institution: 'Tel-Ran Educational Center',
     location: 'Rehovot, Israel',
     period: 'Sep 2020 – Sep 2021',
