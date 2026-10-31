@@ -6,7 +6,7 @@ export const profile: Profile = {
   initials: 'AK',
   role: 'Full-Stack Engineer',
   tagline:
-    'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites for healthcare, legaltech, and consumer goods clients.',
+    'Full-stack engineer with a strong frontend focus and 5+ years building SaaS products and brand websites for healthcare, legaltech, and consumer goods clients. Open to frontend, full-stack, and AI-first roles.',
   location: 'Ukraine',
   countryCode: 'UA',
   availability: 'Available for work',
@@ -25,7 +25,7 @@ export const profile: Profile = {
   ],
   languages: [
     { name: 'Ukrainian', level: 'Native' },
-    { name: 'English', level: 'Professional working' },
-    { name: 'Hebrew', level: 'Limited working' },
+    { name: 'English', level: 'Professional working (B2)' },
+    { name: 'Hebrew', level: 'Limited working (A2)' },
   ],
 }

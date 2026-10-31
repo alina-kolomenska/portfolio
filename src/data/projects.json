@@ -4,17 +4,17 @@
     "company": "Incode Group",
     "period": "Feb 2023 – Sep 2026",
     "description": [
-      "An enterprise AI healthcare platform for patient management, clinical analytics, interactive voice/video automation, and secure healthcare messaging. As the founding frontend engineer, I built the primary web app from scratch, launched the public marketing website, and collaborated on backend feature delivery.",
-      "The platform grew from a prototype into a product handling 2M+ patient interactions annually, with 70%+ of calls resolved without staff involvement (company-reported), serving clients in the US and Europe."
+      "An enterprise AI healthcare platform for patient management, clinical analytics, interactive voice/video automation, and secure healthcare messaging. As the founding frontend engineer, I built the primary web app from scratch, launched the public marketing website, and later owned full-stack features.",
+      "The platform grew from a prototype into a product handling 2M+ patient interactions annually, with 70%+ of calls resolved without staff involvement (company-reported), used by multi-clinic healthcare groups in the US and Europe."
     ],
     "highlights": [
       "Architected the core React web app with Webpack, setting up state management, routing, and a scalable UI structure.",
-      "Implemented RBAC and feature gating for route and module access across clinical teams.",
-      "Built real-time patient messaging and in-browser Twilio telehealth calling, plus AI assistant interfaces with switchable voice and avatar providers (Vapi, ElevenLabs, HeyGen, Tavus).",
+      "Implemented RBAC and per-organization feature gating for route and module access on a multi-tenant platform serving many clinics.",
+      "Built real-time patient messaging over WebSockets and in-browser Twilio telehealth calling, plus AI assistant interfaces with switchable voice and avatar providers (Vapi, ElevenLabs, HeyGen, Tavus).",
       "Developed appointment calendars, clinical analytics dashboards, and PDF/e-signature tools.",
-      "Built live doctor-patient speech translation with Soniox, and multi-language support with i18n and LLM translation for dynamic content.",
+      "Built LLM translation of dynamic content in 13 languages, with admin-selectable Anthropic or OpenAI models, and a live doctor-patient speech translator on Soniox with 60 languages.",
       "Supported PHP backend API endpoints and Flyway migrations for the MySQL database, and used Docker for local development.",
-      "Optimized Core Web Vitals for the web app and the Vite marketing website, and handled the website’s SEO and analytics with Google Search Console, Google Analytics, and Termly cookie consent.",
+      "Optimized Core Web Vitals and SEO for the web app and the Vite marketing website, which scores Lighthouse 90+ for performance and 100 for SEO, and handled the website’s analytics with Google Search Console, Google Analytics, and Termly cookie consent.",
       "Connected the website’s demo request and subscription forms to Postmark emails and Slack notifications for the team.",
       "Set up automated quality pipelines with Playwright, Cypress, Jest, Storybook, and Bugsnag."
     ],
@@ -35,6 +35,9 @@
       "i18n",
       "MySQL",
       "Flyway",
+      "WebSockets",
+      "Claude API",
+      "OpenAI API",
       "Vapi",
       "ElevenLabs",
       "Soniox",
@@ -59,17 +62,15 @@
     "company": "Incode Group",
     "period": "Dec 2025 – Oct 2026",
     "description": [
-      "An AI-powered legaltech platform that automates personal injury client intake and attorney workflows. I was part of a small engineering team building the public marketing website and the authenticated web app for clients, admins, and providers, with real-time AI voice intake agents."
+      "An AI-powered legaltech platform that automates personal injury client intake and attorney workflows, with a public marketing website and an authenticated web app for clients, admins, and providers, powered by real-time AI voice intake agents."
     ],
     "highlights": [
-      "Contributed to the development and architecture of the authenticated web app and the marketing website, both built with Next.js (App Router) and TypeScript.",
-      "Implemented authentication and role-based access control with Clerk and Next.js middleware.",
-      "Built custom Next.js API routes for server-side authorization checks and secure API key proxying.",
-      "Integrated Vapi and ElevenLabs voice widgets for real-time legal intake workflows.",
-      "Built NestJS services with PostgreSQL and Prisma for medical check-ins, turning Vapi voice-call summaries into a secure, per-user recovery history.",
-      "Managed asynchronous voice agent state and data fetching with TanStack Query, validating API boundaries with Zod.",
-      "Added multi-language support to the web app with i18n.",
-      "Delivered accessible marketing landing pages with generated sitemap routes, optimized for performance and SEO."
+      "Built marketing site pages with Next.js 15 (App Router) as React Server Components, statically generated with generateStaticParams; the site scores Lighthouse 90+ for performance and 100 for SEO.",
+      "Implemented authentication and role-based access control with Clerk: middleware on every route, server-component auth redirects, and custom Next.js API routes for authorization checks and secure API key proxying.",
+      "Built the three lead-capture forms with React Hook Form and Zod, submitted through TanStack Query mutations, plus parts of the app’s multi-step intake form.",
+      "Built NestJS endpoints and services with PostgreSQL and Prisma, including medical check-ins that turn Vapi voice-call summaries into a secure, per-user recovery history.",
+      "Integrated Vapi and ElevenLabs voice widgets for real-time legal intake workflows, managing asynchronous agent state with TanStack Query.",
+      "Added multi-language support to the web app with i18n."
     ],
     "tags": [
       "Next.js",
@@ -100,7 +101,7 @@
     "company": "Incode Group",
     "period": "Aug 2022 – Jan 2023",
     "description": [
-      "A suite of high-performance websites and landing pages for major Australian wine brands, built in collaboration with the digital agency Hide & Seek. The project focused on a scalable, white-label frontend with reusable UI components, client-side headless CMS integration, and GSAP animations."
+      "11 websites and landing pages for major Australian wine brands, designed and built in 6 months with the digital agency Hide & Seek on one shared, re-brandable frontend, with reusable UI components, client-side headless CMS integration, and GSAP animations."
     ],
     "highlights": [
       "Converted Figma designs into responsive interfaces for multiple wine brands.",
@@ -152,5 +153,22 @@
       "JUnit"
     ],
     "images": []
+  },
+  {
+    "title": "Djinni Job-Search CLI",
+    "company": "Personal project",
+    "period": "Oct 2026",
+    "description": [
+      "A command-line tool and Claude Code skill for searching IT jobs on Djinni, the Ukrainian tech job board, and reading full postings. Built AI-first with Claude Code: I set the requirements, reviewed every change, and verified the parser against live pages."
+    ],
+    "highlights": [
+      "Search with filters for keywords, category, remote or office work, candidate region, city, salary, and posting age; output as JSON, a table, or plain text.",
+      "Zero runtime dependencies: plain fetch and HTML/JSON-LD parsing on Bun.",
+      "Retries with exponential backoff, and strips hidden text from listings before output.",
+      "45 tests on synthetic fixtures and a mocked fetch, plus an opt-in live smoke test, run in GitHub Actions CI."
+    ],
+    "tags": ["TypeScript", "Bun", "CLI", "Claude Code", "GitHub Actions"],
+    "images": [],
+    "links": ["https://github.com/alina-kolomenska/djinni-search-cli"]
   }
 ]

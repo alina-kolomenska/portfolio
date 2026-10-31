@@ -22,6 +22,10 @@ export const about: About = {
       label: 'Product Ownership',
       text: 'I take features from schema and API design to the final UI, with code review and testing as part of development.',
     },
+    {
+      label: 'AI-First Development',
+      text: 'I work with Claude Code, OpenAI Codex, and Cursor, extended with custom skills, subagents, and MCP servers, and I review and test every change before it ships.',
+    },
   ],
   closing: [
     'With professional working English, I collaborate closely with international, distributed teams. I do my best work in cultures built on trust, direct communication, and developer autonomy.',

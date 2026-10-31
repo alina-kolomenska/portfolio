@@ -4,18 +4,17 @@ export const experience: ExperienceEntry[] = [
   {
     role: 'Full-Stack Engineer',
     company: 'Incode Group',
-    period: 'Dec 2025 – Present',
+    period: 'Dec 2025 – Oct 2026',
     location: 'Kharkiv, Ukraine (Remote)',
     description:
-      'Own features end to end within client product teams, from React and Next.js interfaces to NestJS services, databases, and deployment.',
+      'Owned features end to end within client product teams, from React and Next.js interfaces to NestJS services, databases, and deployment.',
     highlights: [
-      'Design and ship backend services in Node.js, Express, and NestJS, exposing REST APIs for React and Next.js apps.',
-      'Model data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
-      'Build production frontends with React, Next.js, and TypeScript, styled with Tailwind CSS and shadcn/ui.',
-      'Implement authentication and role-based access control with Clerk and JWT.',
-      'Integrate AI voice and avatar agents (Vapi, ElevenLabs, HeyGen, Tavus) into production assistant and automation features, alongside Twilio telehealth calling.',
-      'Run parallel Claude Code sessions in separate git worktrees to develop several features at once, reviewing and testing every change before merge.',
-      'Deploy and maintain apps through CI/CD pipelines, using Docker for local backend environments.',
+      'On Injuro (AI legaltech): built Next.js 15 marketing site pages, implemented Clerk authentication and role-based access, and built NestJS endpoints and services on PostgreSQL with Prisma.',
+      'On Quadrant Health: owned full-stack features end to end, including LLM translation of dynamic content in 13 languages with admin-selectable Anthropic or OpenAI models, and a live doctor-patient speech translator on Soniox with 60 languages.',
+      'Designed and shipped REST APIs in Node.js, Express, and NestJS, and modeled data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
+      'Integrated AI voice and avatar agents (Vapi, ElevenLabs, HeyGen, Tavus) into production assistant and automation features, alongside Twilio telehealth calling.',
+      'Ran parallel Claude Code sessions in separate git worktrees, with custom skills, subagents, and MCP servers, reviewing and testing every change before merge.',
+      'Deployed and maintained apps through CI/CD pipelines, using Docker for local backend environments.',
     ],
   },
   {
@@ -26,11 +25,12 @@ export const experience: ExperienceEntry[] = [
     description:
       'Built production web applications and brand websites for healthcare, consumer goods, and enterprise clients, working within their product teams.',
     highlights: [
+      'Founding frontend engineer on Quadrant Health: built the React web app from scratch as it grew into a platform handling 2M+ patient interactions a year (company-reported).',
+      'Delivered 11 brand websites for Treasury Wine Estates in 6 months with the agency Hide & Seek, built on one shared, re-brandable frontend.',
       'Developed dashboards, admin panels, scheduling, and live chat features with React and TypeScript, styled with Material UI, Tailwind CSS, shadcn/ui, and Sass.',
       'Built animated interfaces and micro-interactions with Framer Motion, GSAP, and Lottie, keeping performance smooth across devices.',
       'Created and maintained shared Storybook component libraries used across projects.',
       'Integrated headless CMS platforms, added analytics tracking, and optimized Core Web Vitals on brand and marketing websites.',
-      'Collaborated with designers and backend engineers to deliver features from design handoff to release.',
     ],
   },
   {
@@ -41,7 +41,7 @@ export const experience: ExperienceEntry[] = [
     description:
       'Worked on a client’s real estate marketplace for rentals and home sales, focusing on the React frontend and test coverage.',
     highlights: [
-      'Developed React and TypeScript frontend features, and built REST endpoints in the Java Spring backend with MongoDB.',
+      'Built most of the React and TypeScript frontend, plus REST endpoints in the Java Spring backend with MongoDB and OAuth-based authentication.',
       'Built responsive map and search interfaces with the Google Maps API for desktop and mobile.',
       'Created a shared component library used across company products.',
       'Wrote React Testing Library and JUnit tests, refactored legacy code, and fixed bugs.',

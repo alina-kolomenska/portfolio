@@ -1,10 +1,14 @@
 [
-  { "category": "Programming Languages", "items": ["TypeScript", "JavaScript", "Java"] },
+  {
+    "category": "Programming Languages",
+    "items": ["TypeScript", "JavaScript", "Java"]
+  },
   {
     "category": "Frontend",
     "items": [
       "React",
       "Next.js",
+      "React Server Components",
       "Redux Toolkit",
       "TanStack Query",
       "React Hook Form",
@@ -33,18 +37,27 @@
   },
   {
     "category": "Backend & Auth",
-    "items": ["Node.js", "NestJS", "Express", "Spring Framework", "REST APIs", "JWT", "OAuth", "Clerk"]
+    "items": ["Node.js", "NestJS", "Express", "Spring Framework", "REST APIs", "WebSockets", "JWT", "OAuth", "Clerk"]
   },
-  { "category": "Data", "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"] },
-  { "category": "Integrations", "items": ["Twilio", "Google Maps API", "Storyblok", "Postmark", "Slack API"] },
+  {
+    "category": "Data",
+    "items": ["PostgreSQL", "Prisma", "MySQL", "Flyway", "MongoDB", "Neon", "Firebase"]
+  },
+  {
+    "category": "Integrations",
+    "items": ["Twilio", "Google Maps API", "Storyblok", "Postmark", "Slack API"]
+  },
   {
     "category": "AI & LLM",
     "items": ["Claude API", "OpenAI API", "Gemini API", "Vapi", "ElevenLabs", "Soniox", "HeyGen LiveAvatar", "Tavus"]
   },
-  { "category": "AI Dev Tools", "items": ["Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"] },
+  {
+    "category": "AI Dev Tools",
+    "items": ["Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"]
+  },
   {
     "category": "Testing",
-    "items": ["Jest", "React Testing Library", "Cypress", "Playwright", "BrowserStack", "JUnit"]
+    "items": ["Jest", "Vitest", "React Testing Library", "Cypress", "Playwright", "BrowserStack", "JUnit"]
   },
   {
     "category": "Infrastructure & Monitoring",
