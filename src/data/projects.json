@@ -159,7 +159,7 @@
     "company": "Personal project",
     "period": "Oct 2026",
     "description": [
-      "A command-line tool and Claude Code skill for searching IT jobs on Djinni, the Ukrainian tech job board, and reading full postings. Built AI-first with Claude Code: I set the requirements, reviewed every change, and verified the parser against live pages."
+      "A command-line tool and Claude Code skill for searching IT jobs on Djinni, the Ukrainian tech job board, and reading full postings. Built AI-first with Claude Code: I set the requirements, tested the result, and verified the parser against live pages."
     ],
     "highlights": [
       "Search with filters for keywords, category, remote or office work, candidate region, city, salary, and posting age; output as JSON, a table, or plain text.",

@@ -24,7 +24,7 @@ export const about: About = {
     },
     {
       label: 'AI-First Development',
-      text: 'I work with Claude Code, OpenAI Codex, and Cursor, extended with custom skills, subagents, and MCP servers, and I review and test every change before it ships.',
+      text: 'I work with Claude Code, OpenAI Codex, and Cursor, extended with custom skills, subagents, and MCP servers, and I review every risky change and test the results before it ships.',
     },
   ],
   closing: [

@@ -13,7 +13,7 @@ export const experience: ExperienceEntry[] = [
       'On Quadrant Health: owned full-stack features end to end, including LLM translation of dynamic content in 13 languages with admin-selectable Anthropic or OpenAI models, and a live doctor-patient speech translator on Soniox with 60 languages.',
       'Designed and shipped REST APIs in Node.js, Express, and NestJS, and modeled data in PostgreSQL with Prisma and in MySQL with Flyway migrations.',
       'Integrated AI voice and avatar agents (Vapi, ElevenLabs, HeyGen, Tavus) into production assistant and automation features, alongside Twilio telehealth calling.',
-      'Ran parallel Claude Code sessions in separate git worktrees, with custom skills, subagents, and MCP servers, reviewing and testing every change before merge.',
+      'Ran parallel Claude Code sessions in separate git worktrees, with custom skills, subagents, and MCP servers, reviewing every risky change and testing the results before merge.',
       'Deployed and maintained apps through CI/CD pipelines, using Docker for local backend environments.',
     ],
   },
