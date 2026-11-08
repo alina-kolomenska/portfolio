@@ -51,7 +51,7 @@ export function llmsTxt() {
     '',
     `- Role: ${profile.role}`,
     `- Location: ${profile.location}`,
-    `- Availability: ${profile.availability}, remote`,
+    `- Availability: ${profile.availability}, remote, full-time or B2B contract`,
     `- Email: [${profile.email}](mailto:${profile.email})`,
     `- [Portfolio](${profile.siteUrl})`,
     ...(profile.resumeUrl ? [`- [CV (PDF)](${absolute(profile.resumeUrl)})`] : []),

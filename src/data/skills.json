@@ -53,7 +53,16 @@
   },
   {
     "category": "AI Dev Tools",
-    "items": ["Claude Code", "Cursor", "OpenAI Codex", "GitHub Copilot"]
+    "items": [
+      "Claude Code",
+      "Cursor",
+      "OpenAI Codex",
+      "GitHub Copilot",
+      "Custom skills",
+      "Hooks",
+      "Subagents",
+      "MCP servers"
+    ]
   },
   {
     "category": "Testing",
@@ -71,7 +80,8 @@
       "Bugsnag",
       "PostHog",
       "Google Analytics",
-      "Google Search Console"
+      "Google Search Console",
+      "Vercel Speed Insights"
     ]
   }
 ]

@@ -26,8 +26,9 @@ export function Contact() {
     <Section id="contact">
       <SectionHeading eyebrow="Contact" title="Let’s talk" />
       <p className="text-muted-foreground">
-        I’m available for remote frontend and full-stack work — feel free to reach out about a role, a project, or just
-        to talk shop.
+        I’m available now for remote frontend and full-stack work, full-time or as a B2B contractor.
+        <br />
+        Feel free to reach out about a role, a project, or just to talk shop.
       </p>
 
       <div className="grid gap-4 lg:grid-cols-2">
