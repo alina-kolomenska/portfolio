@@ -19,8 +19,8 @@ export const profile: Profile = {
   primaryStack: ['React', 'Next.js', 'TypeScript', 'Node.js', 'NestJS'],
   stats: [
     { label: 'Years of experience', value: '5+' },
-    { label: 'Availability', value: 'Remote' },
-    { label: 'Products', value: 'SaaS & AI' },
+    { label: 'Full-time or B2B', value: 'Remote' },
+    { label: 'Product focus', value: 'SaaS & AI' },
     { label: 'Upper-intermediate English', value: 'B2+' },
   ],
   languages: [
